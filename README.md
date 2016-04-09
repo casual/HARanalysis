@@ -21,6 +21,7 @@ The script will generate some variables that will be usefull for analysis:
 - HAR: a variable that contain all the data
 - test_means and train_means: vectors with the meauserements of means
 - test_stds and train_stds: vectors with the meauserements of standars deviations
+- average: data set whit the average of each variable for each activity and each subject.
 
 
 To see this variables, just type it's names on the R console.
