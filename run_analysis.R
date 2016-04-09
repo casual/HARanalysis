@@ -37,13 +37,13 @@ HAR<-rbind(train,test)          #HAR is the new data set that merges train and t
 
 colnames(HAR)<-data_labels[,2]    #names for HAR
 
-means1 <- cbind(train_means,train_stds)
-means2 <- cbind(test_means,test_stds)
-means <- rbind(means1,means2)
+average1 <- cbind(train_means,train_stds)
+average2 <- cbind(test_means,test_stds)
+average <- rbind(average1,average2)
 
-num_labels <- rep(1:nrow(means), each = 6, length.out = nrow(means))
-activity_names <-paste(num_labels,rep(activity_labels[,2], length.out = nrow(means)))
-rownames(means) <-activity_names
+num_labels <- rep(1:nrow(average), each = 6, length.out = nrow(average))
+activity_names <-paste(num_labels,rep(activity_labels[,2], length.out = nrow(average)))
+rownames(average) <-activity_names
 
-#Now we have a table called "means" that contains the mean data
+#Now we have a table called "average" that contains the mean data
 
